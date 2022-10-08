@@ -1,0 +1,746 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9502CBF835A2F65BDFE7A76E /* libPods-ZYBaseCornerRadiusCell.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 05FD6F7955B349D61DEF4BC0 /* libPods-ZYBaseCornerRadiusCell.a */; };
+		FD903F1628362AD5008D5CB5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD903F1528362AD5008D5CB5 /* AppDelegate.m */; };
+		FD903F1928362AD5008D5CB5 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD903F1828362AD5008D5CB5 /* SceneDelegate.m */; };
+		FD903F1C28362AD5008D5CB5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD903F1B28362AD5008D5CB5 /* ViewController.m */; };
+		FD903F1F28362AD5008D5CB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD903F1D28362AD5008D5CB5 /* Main.storyboard */; };
+		FD903F2128362AD5008D5CB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD903F2028362AD5008D5CB5 /* Assets.xcassets */; };
+		FD903F2428362AD5008D5CB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD903F2228362AD5008D5CB5 /* LaunchScreen.storyboard */; };
+		FD903F2728362AD5008D5CB5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD903F2628362AD5008D5CB5 /* main.m */; };
+		FD903F3128362AD5008D5CB5 /* ZYBaseCornerRadiusCellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD903F3028362AD5008D5CB5 /* ZYBaseCornerRadiusCellTests.m */; };
+		FD903F3B28362AD5008D5CB5 /* ZYBaseCornerRadiusCellUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD903F3A28362AD5008D5CB5 /* ZYBaseCornerRadiusCellUITests.m */; };
+		FD903F3D28362AD5008D5CB5 /* ZYBaseCornerRadiusCellUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD903F3C28362AD5008D5CB5 /* ZYBaseCornerRadiusCellUITestsLaunchTests.m */; };
+		FD903F6228362B80008D5CB5 /* ZYBaseCollectionHeader_Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = FD903F4D28362B80008D5CB5 /* ZYBaseCollectionHeader_Cell.m */; };
+		FD903F6328362B80008D5CB5 /* ZYBaseCollection_Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = FD903F4F28362B80008D5CB5 /* ZYBaseCollection_Cell.m */; };
+		FD903F6428362B80008D5CB5 /* ZYBaseTableTable_Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = FD903F5128362B80008D5CB5 /* ZYBaseTableTable_Cell.m */; };
+		FD903F6528362B80008D5CB5 /* ZYBaseTable_Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = FD903F5528362B80008D5CB5 /* ZYBaseTable_Cell.m */; };
+		FD903F6628362B80008D5CB5 /* ZYBaseTableNoData_Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = FD903F5A28362B80008D5CB5 /* ZYBaseTableNoData_Cell.m */; };
+		FD903F6728362B80008D5CB5 /* ZYBaseCollectionCollection_Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = FD903F5D28362B80008D5CB5 /* ZYBaseCollectionCollection_Cell.m */; };
+		FD903F6828362B80008D5CB5 /* ZYBaseCornerRadius_View.m in Sources */ = {isa = PBXBuildFile; fileRef = FD903F5E28362B80008D5CB5 /* ZYBaseCornerRadius_View.m */; };
+		FD903F6928362B80008D5CB5 /* ZYTableSectionTitle_Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = FD903F5F28362B80008D5CB5 /* ZYTableSectionTitle_Cell.m */; };
+		FD903F6A28362B80008D5CB5 /* ZYCollectionSectionHeaderTitle_Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = FD903F6028362B80008D5CB5 /* ZYCollectionSectionHeaderTitle_Cell.m */; };
+		FD903F6B28362B80008D5CB5 /* ZYTableSectionHeaderTitle_View.m in Sources */ = {isa = PBXBuildFile; fileRef = FD903F6128362B80008D5CB5 /* ZYTableSectionHeaderTitle_View.m */; };
+		FD903F6E28362ECE008D5CB5 /* ZYBlankReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD903F6D28362ECE008D5CB5 /* ZYBlankReusableView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD903F2D28362AD5008D5CB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD903F0928362AD5008D5CB5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD903F1028362AD5008D5CB5;
+			remoteInfo = ZYBaseCornerRadiusCell;
+		};
+		FD903F3728362AD5008D5CB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD903F0928362AD5008D5CB5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD903F1028362AD5008D5CB5;
+			remoteInfo = ZYBaseCornerRadiusCell;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05FD6F7955B349D61DEF4BC0 /* libPods-ZYBaseCornerRadiusCell.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZYBaseCornerRadiusCell.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8557BA4B153C419A5D4A66E7 /* Pods-ZYBaseCornerRadiusCell.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYBaseCornerRadiusCell.debug.xcconfig"; path = "Target Support Files/Pods-ZYBaseCornerRadiusCell/Pods-ZYBaseCornerRadiusCell.debug.xcconfig"; sourceTree = "<group>"; };
+		EAB1B42185F91D47E6469098 /* Pods-ZYBaseCornerRadiusCell.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYBaseCornerRadiusCell.release.xcconfig"; path = "Target Support Files/Pods-ZYBaseCornerRadiusCell/Pods-ZYBaseCornerRadiusCell.release.xcconfig"; sourceTree = "<group>"; };
+		FD903F1128362AD5008D5CB5 /* ZYBaseCornerRadiusCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZYBaseCornerRadiusCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD903F1428362AD5008D5CB5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FD903F1528362AD5008D5CB5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FD903F1728362AD5008D5CB5 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		FD903F1828362AD5008D5CB5 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		FD903F1A28362AD5008D5CB5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FD903F1B28362AD5008D5CB5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FD903F1E28362AD5008D5CB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FD903F2028362AD5008D5CB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD903F2328362AD5008D5CB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FD903F2528362AD5008D5CB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD903F2628362AD5008D5CB5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FD903F2C28362AD5008D5CB5 /* ZYBaseCornerRadiusCellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZYBaseCornerRadiusCellTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD903F3028362AD5008D5CB5 /* ZYBaseCornerRadiusCellTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYBaseCornerRadiusCellTests.m; sourceTree = "<group>"; };
+		FD903F3628362AD5008D5CB5 /* ZYBaseCornerRadiusCellUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZYBaseCornerRadiusCellUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD903F3A28362AD5008D5CB5 /* ZYBaseCornerRadiusCellUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYBaseCornerRadiusCellUITests.m; sourceTree = "<group>"; };
+		FD903F3C28362AD5008D5CB5 /* ZYBaseCornerRadiusCellUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYBaseCornerRadiusCellUITestsLaunchTests.m; sourceTree = "<group>"; };
+		FD903F4D28362B80008D5CB5 /* ZYBaseCollectionHeader_Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYBaseCollectionHeader_Cell.m; sourceTree = "<group>"; };
+		FD903F4E28362B80008D5CB5 /* ZYCornerRadiusHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYCornerRadiusHeader.h; sourceTree = "<group>"; };
+		FD903F4F28362B80008D5CB5 /* ZYBaseCollection_Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYBaseCollection_Cell.m; sourceTree = "<group>"; };
+		FD903F5028362B80008D5CB5 /* ZYTableSectionTitle_Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYTableSectionTitle_Cell.h; sourceTree = "<group>"; };
+		FD903F5128362B80008D5CB5 /* ZYBaseTableTable_Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYBaseTableTable_Cell.m; sourceTree = "<group>"; };
+		FD903F5228362B80008D5CB5 /* ZYBaseCollectionCollection_Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYBaseCollectionCollection_Cell.h; sourceTree = "<group>"; };
+		FD903F5328362B80008D5CB5 /* ZYBaseTableTable_Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYBaseTableTable_Cell.h; sourceTree = "<group>"; };
+		FD903F5428362B80008D5CB5 /* ZYBaseTableNoData_Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYBaseTableNoData_Cell.h; sourceTree = "<group>"; };
+		FD903F5528362B80008D5CB5 /* ZYBaseTable_Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYBaseTable_Cell.m; sourceTree = "<group>"; };
+		FD903F5628362B80008D5CB5 /* ZYBaseCornerRadius_View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYBaseCornerRadius_View.h; sourceTree = "<group>"; };
+		FD903F5728362B80008D5CB5 /* ZYCollectionSectionHeaderTitle_Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYCollectionSectionHeaderTitle_Cell.h; sourceTree = "<group>"; };
+		FD903F5828362B80008D5CB5 /* ZYTableSectionHeaderTitle_View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYTableSectionHeaderTitle_View.h; sourceTree = "<group>"; };
+		FD903F5928362B80008D5CB5 /* ZYBaseCollectionHeader_Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYBaseCollectionHeader_Cell.h; sourceTree = "<group>"; };
+		FD903F5A28362B80008D5CB5 /* ZYBaseTableNoData_Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYBaseTableNoData_Cell.m; sourceTree = "<group>"; };
+		FD903F5B28362B80008D5CB5 /* ZYBaseTable_Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYBaseTable_Cell.h; sourceTree = "<group>"; };
+		FD903F5C28362B80008D5CB5 /* ZYBaseCollection_Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYBaseCollection_Cell.h; sourceTree = "<group>"; };
+		FD903F5D28362B80008D5CB5 /* ZYBaseCollectionCollection_Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYBaseCollectionCollection_Cell.m; sourceTree = "<group>"; };
+		FD903F5E28362B80008D5CB5 /* ZYBaseCornerRadius_View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYBaseCornerRadius_View.m; sourceTree = "<group>"; };
+		FD903F5F28362B80008D5CB5 /* ZYTableSectionTitle_Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYTableSectionTitle_Cell.m; sourceTree = "<group>"; };
+		FD903F6028362B80008D5CB5 /* ZYCollectionSectionHeaderTitle_Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYCollectionSectionHeaderTitle_Cell.m; sourceTree = "<group>"; };
+		FD903F6128362B80008D5CB5 /* ZYTableSectionHeaderTitle_View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYTableSectionHeaderTitle_View.m; sourceTree = "<group>"; };
+		FD903F6C28362ECE008D5CB5 /* ZYBlankReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYBlankReusableView.h; sourceTree = "<group>"; };
+		FD903F6D28362ECE008D5CB5 /* ZYBlankReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYBlankReusableView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD903F0E28362AD5008D5CB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9502CBF835A2F65BDFE7A76E /* libPods-ZYBaseCornerRadiusCell.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD903F2928362AD5008D5CB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD903F3328362AD5008D5CB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		178FAE053F95A88A60643927 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05FD6F7955B349D61DEF4BC0 /* libPods-ZYBaseCornerRadiusCell.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		68696A8808EB52F912A551C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8557BA4B153C419A5D4A66E7 /* Pods-ZYBaseCornerRadiusCell.debug.xcconfig */,
+				EAB1B42185F91D47E6469098 /* Pods-ZYBaseCornerRadiusCell.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FD903F0828362AD5008D5CB5 = {
+			isa = PBXGroup;
+			children = (
+				FD903F4928362AF2008D5CB5 /* Classes */,
+				FD903F1328362AD5008D5CB5 /* ZYBaseCornerRadiusCell */,
+				FD903F2F28362AD5008D5CB5 /* ZYBaseCornerRadiusCellTests */,
+				FD903F3928362AD5008D5CB5 /* ZYBaseCornerRadiusCellUITests */,
+				FD903F1228362AD5008D5CB5 /* Products */,
+				68696A8808EB52F912A551C1 /* Pods */,
+				178FAE053F95A88A60643927 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FD903F1228362AD5008D5CB5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD903F1128362AD5008D5CB5 /* ZYBaseCornerRadiusCell.app */,
+				FD903F2C28362AD5008D5CB5 /* ZYBaseCornerRadiusCellTests.xctest */,
+				FD903F3628362AD5008D5CB5 /* ZYBaseCornerRadiusCellUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD903F1328362AD5008D5CB5 /* ZYBaseCornerRadiusCell */ = {
+			isa = PBXGroup;
+			children = (
+				FD903F1428362AD5008D5CB5 /* AppDelegate.h */,
+				FD903F1528362AD5008D5CB5 /* AppDelegate.m */,
+				FD903F1728362AD5008D5CB5 /* SceneDelegate.h */,
+				FD903F1828362AD5008D5CB5 /* SceneDelegate.m */,
+				FD903F1A28362AD5008D5CB5 /* ViewController.h */,
+				FD903F1B28362AD5008D5CB5 /* ViewController.m */,
+				FD903F1D28362AD5008D5CB5 /* Main.storyboard */,
+				FD903F2028362AD5008D5CB5 /* Assets.xcassets */,
+				FD903F2228362AD5008D5CB5 /* LaunchScreen.storyboard */,
+				FD903F2528362AD5008D5CB5 /* Info.plist */,
+				FD903F2628362AD5008D5CB5 /* main.m */,
+			);
+			path = ZYBaseCornerRadiusCell;
+			sourceTree = "<group>";
+		};
+		FD903F2F28362AD5008D5CB5 /* ZYBaseCornerRadiusCellTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD903F3028362AD5008D5CB5 /* ZYBaseCornerRadiusCellTests.m */,
+			);
+			path = ZYBaseCornerRadiusCellTests;
+			sourceTree = "<group>";
+		};
+		FD903F3928362AD5008D5CB5 /* ZYBaseCornerRadiusCellUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FD903F3A28362AD5008D5CB5 /* ZYBaseCornerRadiusCellUITests.m */,
+				FD903F3C28362AD5008D5CB5 /* ZYBaseCornerRadiusCellUITestsLaunchTests.m */,
+			);
+			path = ZYBaseCornerRadiusCellUITests;
+			sourceTree = "<group>";
+		};
+		FD903F4928362AF2008D5CB5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FD903F6C28362ECE008D5CB5 /* ZYBlankReusableView.h */,
+				FD903F6D28362ECE008D5CB5 /* ZYBlankReusableView.m */,
+				FD903F5C28362B80008D5CB5 /* ZYBaseCollection_Cell.h */,
+				FD903F4F28362B80008D5CB5 /* ZYBaseCollection_Cell.m */,
+				FD903F5228362B80008D5CB5 /* ZYBaseCollectionCollection_Cell.h */,
+				FD903F5D28362B80008D5CB5 /* ZYBaseCollectionCollection_Cell.m */,
+				FD903F5928362B80008D5CB5 /* ZYBaseCollectionHeader_Cell.h */,
+				FD903F4D28362B80008D5CB5 /* ZYBaseCollectionHeader_Cell.m */,
+				FD903F5628362B80008D5CB5 /* ZYBaseCornerRadius_View.h */,
+				FD903F5E28362B80008D5CB5 /* ZYBaseCornerRadius_View.m */,
+				FD903F5B28362B80008D5CB5 /* ZYBaseTable_Cell.h */,
+				FD903F5528362B80008D5CB5 /* ZYBaseTable_Cell.m */,
+				FD903F5428362B80008D5CB5 /* ZYBaseTableNoData_Cell.h */,
+				FD903F5A28362B80008D5CB5 /* ZYBaseTableNoData_Cell.m */,
+				FD903F5328362B80008D5CB5 /* ZYBaseTableTable_Cell.h */,
+				FD903F5128362B80008D5CB5 /* ZYBaseTableTable_Cell.m */,
+				FD903F5728362B80008D5CB5 /* ZYCollectionSectionHeaderTitle_Cell.h */,
+				FD903F6028362B80008D5CB5 /* ZYCollectionSectionHeaderTitle_Cell.m */,
+				FD903F4E28362B80008D5CB5 /* ZYCornerRadiusHeader.h */,
+				FD903F5828362B80008D5CB5 /* ZYTableSectionHeaderTitle_View.h */,
+				FD903F6128362B80008D5CB5 /* ZYTableSectionHeaderTitle_View.m */,
+				FD903F5028362B80008D5CB5 /* ZYTableSectionTitle_Cell.h */,
+				FD903F5F28362B80008D5CB5 /* ZYTableSectionTitle_Cell.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD903F1028362AD5008D5CB5 /* ZYBaseCornerRadiusCell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD903F4028362AD5008D5CB5 /* Build configuration list for PBXNativeTarget "ZYBaseCornerRadiusCell" */;
+			buildPhases = (
+				6CF55EF5777F60FE91B16A7E /* [CP] Check Pods Manifest.lock */,
+				FD903F0D28362AD5008D5CB5 /* Sources */,
+				FD903F0E28362AD5008D5CB5 /* Frameworks */,
+				FD903F0F28362AD5008D5CB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZYBaseCornerRadiusCell;
+			productName = ZYBaseCornerRadiusCell;
+			productReference = FD903F1128362AD5008D5CB5 /* ZYBaseCornerRadiusCell.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD903F2B28362AD5008D5CB5 /* ZYBaseCornerRadiusCellTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD903F4328362AD5008D5CB5 /* Build configuration list for PBXNativeTarget "ZYBaseCornerRadiusCellTests" */;
+			buildPhases = (
+				FD903F2828362AD5008D5CB5 /* Sources */,
+				FD903F2928362AD5008D5CB5 /* Frameworks */,
+				FD903F2A28362AD5008D5CB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD903F2E28362AD5008D5CB5 /* PBXTargetDependency */,
+			);
+			name = ZYBaseCornerRadiusCellTests;
+			productName = ZYBaseCornerRadiusCellTests;
+			productReference = FD903F2C28362AD5008D5CB5 /* ZYBaseCornerRadiusCellTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FD903F3528362AD5008D5CB5 /* ZYBaseCornerRadiusCellUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD903F4628362AD5008D5CB5 /* Build configuration list for PBXNativeTarget "ZYBaseCornerRadiusCellUITests" */;
+			buildPhases = (
+				FD903F3228362AD5008D5CB5 /* Sources */,
+				FD903F3328362AD5008D5CB5 /* Frameworks */,
+				FD903F3428362AD5008D5CB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD903F3828362AD5008D5CB5 /* PBXTargetDependency */,
+			);
+			name = ZYBaseCornerRadiusCellUITests;
+			productName = ZYBaseCornerRadiusCellUITests;
+			productReference = FD903F3628362AD5008D5CB5 /* ZYBaseCornerRadiusCellUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD903F0928362AD5008D5CB5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					FD903F1028362AD5008D5CB5 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					FD903F2B28362AD5008D5CB5 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = FD903F1028362AD5008D5CB5;
+					};
+					FD903F3528362AD5008D5CB5 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = FD903F1028362AD5008D5CB5;
+					};
+				};
+			};
+			buildConfigurationList = FD903F0C28362AD5008D5CB5 /* Build configuration list for PBXProject "ZYBaseCornerRadiusCell" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD903F0828362AD5008D5CB5;
+			productRefGroup = FD903F1228362AD5008D5CB5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD903F1028362AD5008D5CB5 /* ZYBaseCornerRadiusCell */,
+				FD903F2B28362AD5008D5CB5 /* ZYBaseCornerRadiusCellTests */,
+				FD903F3528362AD5008D5CB5 /* ZYBaseCornerRadiusCellUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD903F0F28362AD5008D5CB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD903F2428362AD5008D5CB5 /* LaunchScreen.storyboard in Resources */,
+				FD903F2128362AD5008D5CB5 /* Assets.xcassets in Resources */,
+				FD903F1F28362AD5008D5CB5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD903F2A28362AD5008D5CB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD903F3428362AD5008D5CB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6CF55EF5777F60FE91B16A7E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZYBaseCornerRadiusCell-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD903F0D28362AD5008D5CB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD903F6728362B80008D5CB5 /* ZYBaseCollectionCollection_Cell.m in Sources */,
+				FD903F6A28362B80008D5CB5 /* ZYCollectionSectionHeaderTitle_Cell.m in Sources */,
+				FD903F1C28362AD5008D5CB5 /* ViewController.m in Sources */,
+				FD903F6B28362B80008D5CB5 /* ZYTableSectionHeaderTitle_View.m in Sources */,
+				FD903F6228362B80008D5CB5 /* ZYBaseCollectionHeader_Cell.m in Sources */,
+				FD903F1628362AD5008D5CB5 /* AppDelegate.m in Sources */,
+				FD903F2728362AD5008D5CB5 /* main.m in Sources */,
+				FD903F6928362B80008D5CB5 /* ZYTableSectionTitle_Cell.m in Sources */,
+				FD903F6628362B80008D5CB5 /* ZYBaseTableNoData_Cell.m in Sources */,
+				FD903F6428362B80008D5CB5 /* ZYBaseTableTable_Cell.m in Sources */,
+				FD903F6828362B80008D5CB5 /* ZYBaseCornerRadius_View.m in Sources */,
+				FD903F6528362B80008D5CB5 /* ZYBaseTable_Cell.m in Sources */,
+				FD903F6328362B80008D5CB5 /* ZYBaseCollection_Cell.m in Sources */,
+				FD903F6E28362ECE008D5CB5 /* ZYBlankReusableView.m in Sources */,
+				FD903F1928362AD5008D5CB5 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD903F2828362AD5008D5CB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD903F3128362AD5008D5CB5 /* ZYBaseCornerRadiusCellTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD903F3228362AD5008D5CB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD903F3B28362AD5008D5CB5 /* ZYBaseCornerRadiusCellUITests.m in Sources */,
+				FD903F3D28362AD5008D5CB5 /* ZYBaseCornerRadiusCellUITestsLaunchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD903F2E28362AD5008D5CB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD903F1028362AD5008D5CB5 /* ZYBaseCornerRadiusCell */;
+			targetProxy = FD903F2D28362AD5008D5CB5 /* PBXContainerItemProxy */;
+		};
+		FD903F3828362AD5008D5CB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD903F1028362AD5008D5CB5 /* ZYBaseCornerRadiusCell */;
+			targetProxy = FD903F3728362AD5008D5CB5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FD903F1D28362AD5008D5CB5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD903F1E28362AD5008D5CB5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FD903F2228362AD5008D5CB5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD903F2328362AD5008D5CB5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD903F3E28362AD5008D5CB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FD903F3F28362AD5008D5CB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD903F4128362AD5008D5CB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8557BA4B153C419A5D4A66E7 /* Pods-ZYBaseCornerRadiusCell.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ZYBaseCornerRadiusCell/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sinodata.test1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FD903F4228362AD5008D5CB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAB1B42185F91D47E6469098 /* Pods-ZYBaseCornerRadiusCell.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ZYBaseCornerRadiusCell/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sinodata.test1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FD903F4428362AD5008D5CB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sinodata.ZYBaseCornerRadiusCellTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZYBaseCornerRadiusCell.app/ZYBaseCornerRadiusCell";
+			};
+			name = Debug;
+		};
+		FD903F4528362AD5008D5CB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sinodata.ZYBaseCornerRadiusCellTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZYBaseCornerRadiusCell.app/ZYBaseCornerRadiusCell";
+			};
+			name = Release;
+		};
+		FD903F4728362AD5008D5CB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sinodata.ZYBaseCornerRadiusCellUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZYBaseCornerRadiusCell;
+			};
+			name = Debug;
+		};
+		FD903F4828362AD5008D5CB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sinodata.ZYBaseCornerRadiusCellUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZYBaseCornerRadiusCell;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD903F0C28362AD5008D5CB5 /* Build configuration list for PBXProject "ZYBaseCornerRadiusCell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD903F3E28362AD5008D5CB5 /* Debug */,
+				FD903F3F28362AD5008D5CB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD903F4028362AD5008D5CB5 /* Build configuration list for PBXNativeTarget "ZYBaseCornerRadiusCell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD903F4128362AD5008D5CB5 /* Debug */,
+				FD903F4228362AD5008D5CB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD903F4328362AD5008D5CB5 /* Build configuration list for PBXNativeTarget "ZYBaseCornerRadiusCellTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD903F4428362AD5008D5CB5 /* Debug */,
+				FD903F4528362AD5008D5CB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD903F4628362AD5008D5CB5 /* Build configuration list for PBXNativeTarget "ZYBaseCornerRadiusCellUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD903F4728362AD5008D5CB5 /* Debug */,
+				FD903F4828362AD5008D5CB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD903F0928362AD5008D5CB5 /* Project object */;
+}

@@ -1,0 +1,29 @@
+PODS:
+  - Masonry (1.1.0)
+  - ZYButton (0.0.2):
+    - Masonry
+
+DEPENDENCIES:
+  - Masonry
+  - ZYButton (from `http://5dmg.cc:9997/xuzy/ZYButton.git`)
+
+SPEC REPOS:
+  https://cdn.cocoapods.org/:
+    - Masonry
+
+EXTERNAL SOURCES:
+  ZYButton:
+    :git: http://5dmg.cc:9997/xuzy/ZYButton.git
+
+CHECKOUT OPTIONS:
+  ZYButton:
+    :commit: 6d64563068f8bb7fee5da2efb6b4e6010985e306
+    :git: http://5dmg.cc:9997/xuzy/ZYButton.git
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  ZYButton: 3ae5e73aca9e6e74abb43647ba8f83d8bb9c30f9
+
+PODFILE CHECKSUM: a33738ba029e61e59e943bbf2d9eaa386367a263
+
+COCOAPODS: 1.11.0
