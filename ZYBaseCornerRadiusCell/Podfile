@@ -1,6 +1,5 @@
 source 'https://cdn.cocoapods.org/'
 platform :ios, '9.0'
 target :'ZYBaseCornerRadiusCell' do
-pod 'ZYButton', :git => 'http://5dmg.cc:9997/xuzy/ZYButton.git'
-pod 'Masonry'
+pod 'ZYButton'
 end

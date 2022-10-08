@@ -76,7 +76,6 @@ typedef NS_ENUM(NSUInteger, ZYButtonLayoutStyle) {
 @property (nonatomic, assign) BOOL isNeedLayout;
 @property (nonatomic, strong) NSArray *keyValueObservingOptionNew;
 
-@property (nonatomic, assign) BOOL isNeedLayoutRadiusType;
 @property (nonatomic, assign) ZYButtonCornerRadiusType radiusType;
 @property (nonatomic, assign) CGFloat cornerRadius;
 @end
@@ -546,6 +545,9 @@ typedef NS_ENUM(NSUInteger, ZYButtonLayoutStyle) {
         }else if (imageSize.height == 0 && imageSize.width > 0) {
             imageWith = imageSize.width;
             imageHeight = imageSize.width/self.image.size.width * self.image.size.height;
+        }else {
+            imageWith = imageSize.width;
+            imageHeight = imageSize.height;
         }
     }
     
@@ -558,7 +560,7 @@ typedef NS_ENUM(NSUInteger, ZYButtonLayoutStyle) {
      */
 
     switch (style) {
-        case ZYButtonEdgeInsetsStyleTop:
+        case ZYButtonEdgeInsetsStyleTop://上image 下label
         {
             [self.zy_contentView mas_remakeConstraints:^(MASConstraintMaker *make) {
                 if (imageConstraintEdge.top > 0 && labelConstraintEdge.bottom > 0) {
@@ -569,10 +571,26 @@ typedef NS_ENUM(NSUInteger, ZYButtonLayoutStyle) {
                 }else if (imageConstraintEdge.top == 0 && labelConstraintEdge.bottom > 0) {
                     make.bottom.mas_equalTo(-labelConstraintEdge.bottom);
                 }else {
-                    make.centerY.mas_equalTo(1);
+                    if (imageConstraintEdge.top < 0 && labelConstraintEdge.bottom == 0) {
+                        make.centerY.mas_equalTo(1).offset(imageConstraintEdge.top);
+                    }else if (imageConstraintEdge.top == 0 && labelConstraintEdge.bottom < 0){
+                        make.centerY.mas_equalTo(1).offset(-labelConstraintEdge.bottom);
+                    }else {
+                        make.centerY.mas_equalTo(1);
+                    }
+                    make.top.mas_greaterThanOrEqualTo(0);
+                    make.bottom.mas_lessThanOrEqualTo(0);
                 }
                 make.left.right.mas_equalTo(0);
             }];
+            
+            if (imageConstraintEdge.top < 0 && labelConstraintEdge.bottom == 0) {
+                space = labelConstraintEdge.top;
+            }else if (imageConstraintEdge.top == 0 && labelConstraintEdge.bottom < 0){
+                space = imageConstraintEdge.bottom;
+            }else if (imageConstraintEdge.top < 0 && labelConstraintEdge.bottom < 0) {
+                space = fabs(fabs(imageConstraintEdge.top) - fabs(labelConstraintEdge.bottom));
+            }
             
             [self.zy_imageView mas_remakeConstraints:^(MASConstraintMaker *make) {
                 if (imageConstraintEdge.left > 0 && imageConstraintEdge.right > 0) {
@@ -604,7 +622,7 @@ typedef NS_ENUM(NSUInteger, ZYButtonLayoutStyle) {
             }];
         }
             break;
-        case ZYButtonEdgeInsetsStyleLeft:
+        case ZYButtonEdgeInsetsStyleLeft://左image 右label
         {
             [self.zy_contentView mas_remakeConstraints:^(MASConstraintMaker *make) {
                 if (imageConstraintEdge.left > 0 && labelConstraintEdge.right > 0) {
@@ -615,10 +633,26 @@ typedef NS_ENUM(NSUInteger, ZYButtonLayoutStyle) {
                 }else if (imageConstraintEdge.left == 0 && labelConstraintEdge.right > 0) {
                     make.right.mas_equalTo(-labelConstraintEdge.right);
                 }else {
-                    make.centerX.mas_equalTo(1);
+                    if (imageConstraintEdge.left < 0 && labelConstraintEdge.right == 0) {
+                        make.centerX.mas_equalTo(1).offset(imageConstraintEdge.left);
+                    }else if (imageConstraintEdge.left == 0 && labelConstraintEdge.right < 0){
+                        make.centerX.mas_equalTo(1).offset(-labelConstraintEdge.right);
+                    }else {
+                        make.centerX.mas_equalTo(1);
+                    }
+                    make.left.mas_greaterThanOrEqualTo(0);
+                    make.right.mas_lessThanOrEqualTo(0);
                 }
                 make.top.bottom.mas_equalTo(0);
             }];
+            
+            if (imageConstraintEdge.left < 0 && labelConstraintEdge.right == 0) {
+                space = labelConstraintEdge.left;
+            }else if (imageConstraintEdge.left == 0 && labelConstraintEdge.right < 0){
+                space = imageConstraintEdge.right;
+            }else if (imageConstraintEdge.left < 0 && labelConstraintEdge.right < 0) {
+                space = fabs(fabs(imageConstraintEdge.left) - fabs(labelConstraintEdge.right));
+            }
             
             [self.zy_imageView mas_remakeConstraints:^(MASConstraintMaker *make) {
                 if (imageConstraintEdge.top > 0 && imageConstraintEdge.bottom > 0) {
@@ -648,7 +682,7 @@ typedef NS_ENUM(NSUInteger, ZYButtonLayoutStyle) {
             }];
         }
             break;
-        case ZYButtonEdgeInsetsStyleBottom:
+        case ZYButtonEdgeInsetsStyleBottom://上label 下image
         {
             [self.zy_contentView mas_remakeConstraints:^(MASConstraintMaker *make) {
                 if (imageConstraintEdge.top > 0 && labelConstraintEdge.bottom > 0) {
@@ -659,10 +693,26 @@ typedef NS_ENUM(NSUInteger, ZYButtonLayoutStyle) {
                 }else if (labelConstraintEdge.top == 0 && imageConstraintEdge.bottom > 0) {
                     make.bottom.mas_equalTo(-imageConstraintEdge.bottom);
                 }else {
-                    make.centerY.mas_equalTo(1).offset(-labelConstraintEdge.bottom);
+                    if (labelConstraintEdge.top < 0 && imageConstraintEdge.bottom == 0) {
+                        make.centerY.mas_equalTo(1).offset(labelConstraintEdge.top);
+                    }else if (labelConstraintEdge.top == 0 && imageConstraintEdge.bottom < 0){
+                        make.centerY.mas_equalTo(1).offset(-imageConstraintEdge.bottom);
+                    }else {
+                        make.centerY.mas_equalTo(1);
+                    }
+                    make.top.mas_greaterThanOrEqualTo(0);
+                    make.bottom.mas_lessThanOrEqualTo(0);
                 }
                 make.left.right.mas_equalTo(0);
             }];
+            
+            if (labelConstraintEdge.top < 0 && imageConstraintEdge.bottom == 0) {
+                space = imageConstraintEdge.top;
+            }else if (labelConstraintEdge.top == 0 && imageConstraintEdge.bottom < 0){
+                space = labelConstraintEdge.bottom;
+            }else if (labelConstraintEdge.top < 0 && imageConstraintEdge.bottom < 0) {
+                space = fabs(fabs(labelConstraintEdge.top) - fabs(imageConstraintEdge.bottom));
+            }
             
             if (labelConstraintEdge.left == 0 && labelConstraintEdge.right == 0) {
                 self.zy_titleLabel.textAlignment = NSTextAlignmentCenter;
@@ -693,7 +743,7 @@ typedef NS_ENUM(NSUInteger, ZYButtonLayoutStyle) {
             }];
         }
             break;
-        case ZYButtonEdgeInsetsStyleRight:
+        case ZYButtonEdgeInsetsStyleRight://左label 右image
         {
             [self.zy_contentView mas_remakeConstraints:^(MASConstraintMaker *make) {
                 if (labelConstraintEdge.left > 0 && imageConstraintEdge.right > 0) {
@@ -704,10 +754,26 @@ typedef NS_ENUM(NSUInteger, ZYButtonLayoutStyle) {
                 }else if (labelConstraintEdge.left == 0 && imageConstraintEdge.right > 0) {
                     make.right.mas_equalTo(-imageConstraintEdge.right);
                 }else {
-                    make.centerX.mas_equalTo(1);
+                    if (labelConstraintEdge.left < 0 && imageConstraintEdge.right == 0) {
+                        make.centerX.mas_equalTo(1).offset(labelConstraintEdge.left);
+                    }else if (labelConstraintEdge.left == 0 && imageConstraintEdge.right < 0){
+                        make.centerX.mas_equalTo(1).offset(-imageConstraintEdge.right);
+                    }else {
+                        make.centerX.mas_equalTo(1);
+                    }
+                    make.left.mas_greaterThanOrEqualTo(0);
+                    make.right.mas_lessThanOrEqualTo(0);
                 }
                 make.top.bottom.mas_equalTo(0);
             }];
+            
+            if (labelConstraintEdge.left < 0 && imageConstraintEdge.right == 0) {
+                space = imageConstraintEdge.left;
+            }else if (labelConstraintEdge.left == 0 && imageConstraintEdge.right < 0){
+                space = labelConstraintEdge.right;
+            }else if (labelConstraintEdge.left < 0 && imageConstraintEdge.right < 0) {
+                space = fabs(fabs(labelConstraintEdge.left) - fabs(imageConstraintEdge.right));
+            }
             
             [self.zy_titleLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
                 make.left.mas_equalTo(0);
@@ -737,7 +803,6 @@ typedef NS_ENUM(NSUInteger, ZYButtonLayoutStyle) {
 }
 
 - (void)layoutButtonWithRadiusType:(ZYButtonCornerRadiusType)radiusType cornerRadius:(CGFloat)cornerRadius {
-    self.isNeedLayoutRadiusType = YES;
     self.radiusType = radiusType;
     self.cornerRadius = cornerRadius;
 }
@@ -844,36 +909,33 @@ typedef NS_ENUM(NSUInteger, ZYButtonLayoutStyle) {
 }
 
 - (void)layoutRadiusType {
-    if (self.isNeedLayoutRadiusType) {
+    if (self.radiusType != ZYButtonCornerRadiusTypeNone) {
         if (self.frame.size.width > 0) {
-            self.self.isNeedLayoutRadiusType = NO;
-            if (self.radiusType != ZYButtonCornerRadiusTypeNone) {
-                UIRectCorner corner;
-                if (self.radiusType == ZYButtonCornerRadiusTypeTopLeft) {
-                    corner = UIRectCornerTopLeft;
-                }else if (self.radiusType == ZYButtonCornerRadiusTypeTopRight) {
-                    corner = UIRectCornerTopRight;
-                }else if (self.radiusType == ZYButtonCornerRadiusTypeBottomLeft) {
-                    corner = UIRectCornerBottomLeft;
-                }else if (self.radiusType == ZYButtonCornerRadiusTypeBottomRight) {
-                    corner = UIRectCornerBottomRight;
-                }else if (self.radiusType == ZYButtonCornerRadiusTypeTopLeftAndTopRight) {
-                    corner = UIRectCornerTopLeft | UIRectCornerTopRight;
-                }else if (self.radiusType == ZYButtonCornerRadiusTypeBottomLeftAndBottomRight) {
-                    corner = UIRectCornerBottomLeft | UIRectCornerBottomRight;
-                }else {
-                    corner = UIRectCornerAllCorners;
-                }
-                UIBezierPath * maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:corner cornerRadii:CGSizeMake(self.cornerRadius, self.cornerRadius)];
-                
-                CAShapeLayer * maskLayer = [[CAShapeLayer alloc] init];
-                maskLayer.frame = self.bounds;
-                maskLayer.path = maskPath.CGPath;
-                self.layer.mask = maskLayer;
+            UIRectCorner corner;
+            if (self.radiusType == ZYButtonCornerRadiusTypeTopLeft) {
+                corner = UIRectCornerTopLeft;
+            }else if (self.radiusType == ZYButtonCornerRadiusTypeTopRight) {
+                corner = UIRectCornerTopRight;
+            }else if (self.radiusType == ZYButtonCornerRadiusTypeBottomLeft) {
+                corner = UIRectCornerBottomLeft;
+            }else if (self.radiusType == ZYButtonCornerRadiusTypeBottomRight) {
+                corner = UIRectCornerBottomRight;
+            }else if (self.radiusType == ZYButtonCornerRadiusTypeTopLeftAndTopRight) {
+                corner = UIRectCornerTopLeft | UIRectCornerTopRight;
+            }else if (self.radiusType == ZYButtonCornerRadiusTypeBottomLeftAndBottomRight) {
+                corner = UIRectCornerBottomLeft | UIRectCornerBottomRight;
             }else {
-                self.layer.mask = nil;
+                corner = UIRectCornerAllCorners;
             }
+            UIBezierPath * maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:corner cornerRadii:CGSizeMake(self.cornerRadius, self.cornerRadius)];
+            
+            CAShapeLayer * maskLayer = [[CAShapeLayer alloc] init];
+            maskLayer.frame = self.bounds;
+            maskLayer.path = maskPath.CGPath;
+            self.layer.mask = maskLayer;
         }
+    }else {
+        self.layer.mask = nil;
     }
 }
 
